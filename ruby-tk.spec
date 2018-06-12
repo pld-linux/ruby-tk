@@ -20,6 +20,7 @@ Group:		Development/Languages
 URL:		https://github.com/ruby/tk
 BuildRequires:	rpm-rubyprov
 BuildRequires:	rpmbuild(macros) >= 1.665
+BuildRequires:	ruby-bundler
 BuildRequires:	ruby-rubygems
 BuildRequires:	ruby-rake
 BuildRequires:	sed >= 4.0
