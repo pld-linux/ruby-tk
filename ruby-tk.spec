@@ -10,7 +10,7 @@ Summary:	Tk interface module using tcltklib
 Summary(pl.UTF-8):	Moduł interfejsu Tk wykorzystujący tcltklib
 Name:		ruby-tk
 Version:	0.2.0
-Release:	1
+Release:	2
 Epoch:		2
 License:	BSD or Ruby
 #Source0Download: https://github.com/ruby/tk/releases
