@@ -1,0 +1,9 @@
+diff -uNr tk-0.6.0.orig/lib/tkextlib/pkg_checker.rb tk-0.6.0/lib/tkextlib/pkg_checker.rb
+--- tk-0.6.0.orig/lib/tkextlib/pkg_checker.rb	2026-03-21 00:54:38.289818927 +0100
++++ tk-0.6.0/lib/tkextlib/pkg_checker.rb	2026-03-21 00:54:38.492978301 +0100
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env ruby
++#!/usr/bin/ruby
+ # frozen_string_literal: false
+ #
+ #  Ruby/Tk extension library checker
