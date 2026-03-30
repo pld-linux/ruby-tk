@@ -1,0 +1,22 @@
+--- a/ext/tk/extconf.rb
++++ b/ext/tk/extconf.rb
+@@ -1166,7 +1166,8 @@ def find_tcl(tcllib, stubs, version_list,
+           libnames.find{|libname|
+             sufx_list.find{|sufx|
+               print(".")
+-              dir_enum.map{|fname|
++              dir_enum.map{|fname0|
++                fname = fname0.dup.force_encoding('UTF-8')
+                 if fname =~ /^.*(#{libname}.*#{sufx})\.(#{exts}).*$/
+                   [fname, $1, $2]
+                 end
+@@ -1306,7 +1307,8 @@ def find_tk(tklib, stubs, version_list,
+           libnames.find{|libname|
+             sufx_list.find{|sufx|
+               print(".")
+-              dir_enum.map{|fname|
++              dir_enum.map{|fname0|
++                fname = fname0.dup.force_encoding('UTF-8')
+                 if fname =~ /^.*(#{libname}.*#{sufx})\.(#{exts}).*$/
+                   [fname, $1, $2]
+                 end

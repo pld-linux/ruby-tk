@@ -2,12 +2,13 @@
 Summary:	Tcl/Tk interface for Ruby
 Name:		ruby-%{pkgname}
 Version:	0.6.0
-Release:	2
+Release:	3
 License:	2-clause BSDL
 Group:		Development/Languages
 Source0:	http://rubygems.org/downloads/%{pkgname}-%{version}.gem
 # Source0-md5:	819d6471c69f8ee17e6c4976881e7f30
 Patch0:		ruby-tk-shebang.patch
+Patch1:		ruby-tk-extconf-encoding.patch
 URL:		https://github.com/ruby/tk
 BuildRequires:	rpm-rubyprov
 BuildRequires:	rpmbuild(macros) >= 1.665
@@ -48,6 +49,7 @@ Dokumentacji w formacie ri dla %{name}.
 %prep
 %setup -q -n %{pkgname}-%{version}
 %patch -P0 -p1
+%patch -P1 -p1
 
 %build
 cd ext/tk
