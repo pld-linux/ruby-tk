@@ -2,7 +2,7 @@
 Summary:	Tcl/Tk interface for Ruby
 Name:		ruby-%{pkgname}
 Version:	0.6.0
-Release:	3
+Release:	4
 License:	2-clause BSDL
 Group:		Development/Languages
 Source0:	http://rubygems.org/downloads/%{pkgname}-%{version}.gem
